@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/41f50c5ecc.js" crossorigin="anonymous"></script>
+    <title>Paint</title>
+</head>
+<body>
+    <div class="settings">
+        <div class="settings__colors">
+            <div class="settings__colors-item settings__colors-item-active settings__colors-item-black" data-color="black"></div>
+            <div class="settings__colors-item settings__colors-item-white" data-color="white"></div>
+            <div class="settings__colors-item settings__colors-item-red" data-color="red"></div>
+            <div class="settings__colors-item settings__colors-item-green" data-color="green"></div>
+            <div class="settings__colors-item settings__colors-item-blue" data-color="blue"></div>
+            <div class="settings__colors-item settings__colors-item-yellow" data-color="yellow"></div>
+            <div class="settings__colors-item settings__colors-item-сyanide" data-color="#00ffff"></div>
+            <div class="settings__colors-item settings__colors-item-magenta" data-color="magenta"></div>
+            <div class="settings__colors-item settings__colors-item-orange" data-color="orange"></div>
+            <div class="settings__colors-item settings__colors-item-purple" data-color="purple"></div>
+            <div class="settings__colors-item settings__colors-item-gray" data-color="gray"></div>
+            <div class="settings__colors-item settings__colors-item-brown" data-color="brown"></div>
+        </div>
+
+        <div class="toolbar">
+            <ul>
+                <li class="tool active" data-type="pen"><i class="fa-solid fa-pen"></i></li>
+                <li class="tool" data-type="eraser"><i class="fa-solid fa-eraser"></i></li>
+            </ul>
+        </div>        
+
+        <div class="line-size">
+            <input class="line-width-input" type="range" id="volume" name="volume" min="1" max="30" value="1">
+        </div>
+    </div>
+    <canvas width="600" height="600" id="canvas">
+    </canvas>
+    <div class="button-clear-box">
+        <button class="button-clear-box__clear-button">Clear</button>
+    </div>
+    <script src="main.js" type="module"></script>
+    <script src="fillAlgoritm.js" type="module"></script>
+</body>
+</html>
